@@ -1,0 +1,6 @@
+[Setting]
+ResouceMain ="./Data/main"
+ResouceSub ="./Data/sub"
+
+TargetMain="./Target/maindata"
+TargetSub="./Target/subdata"

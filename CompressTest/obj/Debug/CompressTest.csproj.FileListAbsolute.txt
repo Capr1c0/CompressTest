@@ -1,0 +1,6 @@
+C:\Users\Capco\source\repos\CompressTest\CompressTest\bin\Debug\CompressTest.exe.config
+C:\Users\Capco\source\repos\CompressTest\CompressTest\bin\Debug\CompressTest.exe
+C:\Users\Capco\source\repos\CompressTest\CompressTest\bin\Debug\CompressTest.pdb
+C:\Users\Capco\source\repos\CompressTest\CompressTest\obj\Debug\CompressTest.csprojAssemblyReference.cache
+C:\Users\Capco\source\repos\CompressTest\CompressTest\obj\Debug\CompressTest.exe
+C:\Users\Capco\source\repos\CompressTest\CompressTest\obj\Debug\CompressTest.pdb
