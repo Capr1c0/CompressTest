@@ -9,7 +9,7 @@ namespace CompressTest
 {
     public static class Dir
     {
-        public static void DirectoryCopy(string srcDirName, string dstDirName, bool OverWrite)
+        public static void DirectoryMove(string srcDirName, string dstDirName, bool OverWrite)
         {
             // コピー元ディレクリが存在しない場合、終了します。
             if (!Directory.Exists(srcDirName)) return;
@@ -34,7 +34,12 @@ namespace CompressTest
                 if (!OverWrite) continue;
 
                 // ファイルをコピーします。
-                srcFile.CopyTo(dstFile, OverWrite);
+                if (File.Exists(dstFile))
+                {
+                    File.Delete(dstFile);
+                }
+                Console.WriteLine("ファイル更新中 -> " + dstFile);
+                srcFile.MoveTo(dstFile/*, OverWrite*/);
             }
 
             // サブディレクトリもコピーする場合
@@ -46,7 +51,7 @@ namespace CompressTest
                 {
                     // このメソッドを再帰呼出しして、サブディレクトリをコピーします。
                     var dstDirPath = Path.Combine(dstDirName, srcSubDir.Name);
-                    DirectoryCopy(srcSubDir.FullName, dstDirPath, OverWrite);
+                    DirectoryMove(srcSubDir.FullName, dstDirPath, OverWrite);
                 }
             }
         }

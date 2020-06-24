@@ -1,6 +1,8 @@
 [Setting]
-ResouceMain ="./Data/main"
-ResouceSub ="./Data/sub"
+WorkDirectory="tmp"
+
+ResouceMain ="Data/main"
+ResouceSub ="Data/sub"
 
 TargetMain="./Target/maindata"
 TargetSub="./Target/subdata"
